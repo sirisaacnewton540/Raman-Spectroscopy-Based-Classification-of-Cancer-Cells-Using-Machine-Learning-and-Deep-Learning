@@ -2,9 +2,11 @@
 
 This project presents a complete pipeline for classifying cancerous vs normal cell types using Surface-Enhanced Raman Spectroscopy (SERS) data. We analyze spectroscopic responses of cell media functionalized with three different chemical groups — NH₂, COOH, and (COOH)₂ — and apply machine learning, dimensionality reduction, and deep learning models for accurate identification of cell phenotypes.
 
+![image](https://github.com/user-attachments/assets/868e4d6c-9348-401e-b297-c54b0a065bcf)
+
 ---
 
-## 🧪 Dataset Overview
+## 🧪 [Dataset (with link)](https://www.kaggle.com/datasets/andriitrelin/cells-raman-spectra/data)
 
 **Source**: University of Chemistry and Technology, Prague
 **Description**:
@@ -74,8 +76,14 @@ Raman spectra were collected from cell culture media associated with 12 types of
 
 ### Visual Exploration
 
-* **t-SNE** and **UMAP** showed high inter-class separability, outperforming PCA.
+* **t-SNE** showed high inter-class separability, outperforming PCA.
 * NH₂+COOH combinations improved clustering, suggesting informative spectral fusion.
+
+![image](https://github.com/user-attachments/assets/c3be62d6-d80d-4bcd-ba46-a5e99ec3664d)
+
+![image](https://github.com/user-attachments/assets/44ae2b3f-f106-49e8-86cb-88e337163f7c)
+
+
 
 ### Clustering (K-Means)
 
@@ -98,6 +106,15 @@ Raman spectra were collected from cell culture media associated with 12 types of
 | COOH    | \~91%    |
 | (COOH)₂ | \~89%    |
 
+![image](https://github.com/user-attachments/assets/16a96e34-5e31-4c94-a772-0af0318c391e)
+
+![image](https://github.com/user-attachments/assets/7f903ebc-5d21-4285-b8fb-c7b9b6a2d1ea)
+
+![image](https://github.com/user-attachments/assets/8af9469f-2231-425d-a5d9-e9640276a121)
+
+![image](https://github.com/user-attachments/assets/4aeb229b-6fb0-40e6-b898-a9da65431739)
+
+
 CNNs significantly outperformed classical models, capturing subtle patterns in high-dimensional Raman signals.
 
 ---
@@ -109,26 +126,10 @@ CNNs significantly outperformed classical models, capturing subtle patterns in h
 * CNNs demonstrated robust performance across all functional groups, showing the viability of deep learning in Raman biosensing applications.
 * Future directions include ensemble models, attention-based networks, and real-time biosensor integration.
 
----
 
-## 📂 Repository Structure
-
-```
-📁 archive_raman/
-    └── [CellType]/
-        ├── NH2.csv
-        ├── COOH.csv
-        └── (COOH)2.csv
-📜 Raman Cancer Cell Classification.py
-📜 README.md
-```
 
 ## 💡 Future Enhancements
 
 * Integrate spectral denoising and baseline correction
 * Use advanced architectures (Transformers, ResNet1D)
 * Apply domain adaptation for real-world, multi-lab deployment
-
----
-
-Let me know if you want this styled in LaTeX for a publication or formatted directly into a GitHub repository with all assets.
